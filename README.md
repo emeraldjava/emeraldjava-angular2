@@ -10,3 +10,5 @@ http://www.primefaces.org/primeng/#/
 https://www.polymer-project.org/1.0/
 https://material.angular.io/
 http://ng-lightning.github.io/ng-lightning/#/
+
+https://angular.io/docs/ts/latest/guide/architecture.html
