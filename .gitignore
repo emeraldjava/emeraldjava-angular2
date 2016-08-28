@@ -21,8 +21,6 @@ bin-release/
 /typings/
 /node_modules/
 /.idea/
+/dist/
 npm-debug.log
-*.map
-*.js
-
 *.log
