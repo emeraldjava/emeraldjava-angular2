@@ -1,6 +1,6 @@
 @Component({
   selector:    'hero-list',
-  templateUrl: 'app/hero-list.component.html',
+  templateUrl: 'app/hero-list.component.html'
   providers:   [ HeroService ]
 })
 

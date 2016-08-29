@@ -3,7 +3,7 @@ export class HeroService {
 
   constructor(
     private backend: BackendService,
-    private logger: Logger) { }
+    private logger: LoggerService) { }
 
   getHeroes() {
     this.backend.getAll(Hero).then( (heroes: Hero[]) => {

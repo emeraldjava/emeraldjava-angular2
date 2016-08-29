@@ -2,11 +2,12 @@ import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent }  from './app.component';
-import { Logger } from './logger.service'
+import { LoggerService } from './logger.service'
+import { HeroService } from './hero.service'
 
 @NgModule({
   imports:      [ BrowserModule ],
-	providers:    [ Logger ],
+	providers:    [ LoggerService, HeroService ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
 })

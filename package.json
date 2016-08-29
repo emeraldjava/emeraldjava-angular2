@@ -2,7 +2,7 @@
   "name": "angular2-quickstart",
   "version": "1.0.0",
   "scripts": {
-    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
     "postinstall": "typings install",
     "tsc": "tsc",
@@ -28,7 +28,7 @@
     "zone.js": "^0.6.12",
     "angular2-in-memory-web-api": "0.0.17",
     "bootstrap": "^3.3.6"
-  }, 
+  },
   "devDependencies": {
     "concurrently": "^2.2.0",
     "lite-server": "^2.2.2",
