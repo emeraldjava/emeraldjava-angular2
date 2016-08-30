@@ -12,3 +12,5 @@ https://material.angular.io/
 http://ng-lightning.github.io/ng-lightning/#/
 
 https://angular.io/docs/ts/latest/guide/architecture.html
+
+http://stackoverflow.com/questions/33332394/angular-2-typescript-cant-find-names

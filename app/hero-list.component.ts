@@ -1,7 +1,7 @@
 @Component({
   selector:    'hero-list',
   templateUrl: 'app/hero-list.component.html'
-  providers:   [ HeroService ]
+//  providers:   [ HeroService ]
 })
 
 export class HeroListComponent implements OnInit {
