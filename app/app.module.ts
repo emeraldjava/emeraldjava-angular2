@@ -23,6 +23,7 @@ import { HeroService } from './hero.service';
 		HeroListComponent ],
   bootstrap:    [ AppComponent ]
 })
+
 export class AppModule {
 
 }

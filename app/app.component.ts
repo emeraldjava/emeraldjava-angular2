@@ -12,11 +12,10 @@ import { Hero } from './hero';
 })
 export class AppComponent {
 	title = 'My First Angular 2 App - Sunday Morning 11:44';
-	heroes = [
-    new Hero(1, 'Windstorm'),
-    new Hero(13, 'Bombasto'),
-    new Hero(15, 'Magneta'),
-    new Hero(20, 'Tornado')
-  ];
-  myHero = this.heroes[2];
+	heroes = Hero[];
+  myHero = this.heroes[0];
+
+	constructor(private heroService: HeroService){
+		
+	}
 }

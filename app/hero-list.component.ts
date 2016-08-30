@@ -15,7 +15,7 @@ export class HeroListComponent implements OnInit {
   @Input() heroes: Hero[];
   selectedHero: Hero;
 
-  constructor(service:HeroService) { }
+  constructor(private service:HeroService) { }
 
   ngOnInit() {
     this.heroes = this.service.getHeroes();
