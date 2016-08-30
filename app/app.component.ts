@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
-import { Hero } from './hero';
+import { HeroService } from './hero.service';
+//import { Hero } from './hero';
 
 @Component({
   selector: 'my-app',
-	templateUrl: 'app/app-component.html'
+	templateUrl: 'app/app-component.html',
+	providers: [ HeroService ]
   //template: ``
 })
 export class AppComponent {

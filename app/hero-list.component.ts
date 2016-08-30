@@ -1,7 +1,10 @@
+import { Component, Input } from '@angular/core';
+import { Hero } from './hero';
+
 @Component({
   selector:    'hero-list',
   templateUrl: 'app/hero-list.component.html'
-//  providers:   [ HeroService ]
+  //providers:   [ HeroService ]
 })
 
 export class HeroListComponent implements OnInit {

@@ -14,3 +14,12 @@ http://ng-lightning.github.io/ng-lightning/#/
 https://angular.io/docs/ts/latest/guide/architecture.html
 
 http://stackoverflow.com/questions/33332394/angular-2-typescript-cant-find-names
+
+
+//,
+//"ambientDependencies": {
+			"es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#7de6c3dd94feaeb21f20054b9f30d5dabc5efabd"
+	}
+
+	import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+	
