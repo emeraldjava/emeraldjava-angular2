@@ -4,6 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "generator-jhipster": "^4.2.0",
     "ng-jhipster": "^0.1.12"
   }
 }
