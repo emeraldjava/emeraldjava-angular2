@@ -6,7 +6,7 @@ import { HEROES } from './mock-heroes';
 // https://angular.io/docs/ts/latest/tutorial/toh-pt4.html
 @Injectable()
 export class HeroService {
-  getHeroes(): Hero[] {
-		return HEROES;
+  getHeroes(): Promise<Hero[]> {
+    return Promise.resolve(HEROES);
   }
 }
