@@ -2,8 +2,6 @@ import { Component } from '@angular/core';
 
 import { HeroService } from './hero.service';
 
-import { Hero } from './hero';
-
 @Component({
   selector: 'my-app',
 	templateUrl: 'app/app-component.html',
@@ -16,6 +14,6 @@ export class AppComponent {
   myHero = this.heroes[0];
 
 	constructor(private heroService: HeroService){
-		
+
 	}
 }
