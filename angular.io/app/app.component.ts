@@ -10,8 +10,8 @@ import { HeroService } from './hero.service';
 })
 export class AppComponent {
 	title = 'My First Angular 2 App - Sunday Morning 11:44';
-	heroes = Hero[];
-  myHero = this.heroes[0];
+	//heroes = Hero[];
+  //myHero = this.heroes[0];
 
 	constructor(private heroService: HeroService){
 
