@@ -10,7 +10,8 @@ import { Hero } from './hero';
 @Injectable()
 export class HeroService {
 
-  private  heroes_url = 'api/heroes';
+  private heroes_url = 'api/heroes';
+  private headers = new Headers({'Content-Type':'application/json'});
 
   constructor(private http: Http){}
 
@@ -23,11 +24,20 @@ export class HeroService {
   }
 
   getHero(id: number): Promise<Hero> {
-    const url = '${this.heroes_url/${id}';
+    const url = `${this.heroes_url}/${id}`;
     return this.http.get(url)
       .toPromise()
       .then(response => response.json().data as Hero)
       .catch(this.handleError);
+  }
+
+  update(hero: Hero): Promise<Hero> {
+    const url = `${this.heroes_url}/${hero.id}`;
+    return this.http
+      .put(url, JSON.stringify(hero), {headers: this.headers})
+      .toPromise()
+      .then(() => hero)
+      .catch(this.handleError)
   }
 
   private handleError(error: any): Promise<any> {
