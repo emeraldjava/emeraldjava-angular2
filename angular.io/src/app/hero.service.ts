@@ -22,13 +22,16 @@ export class HeroService {
     //return Promise.resolve(HEROES);
   }
 
+  getHero(id: number): Promise<Hero> {
+    const url = '${this.heroes_url/${id}';
+    return this.http.get(url)
+      .toPromise()
+      .then(response => response.json().data as Hero)
+      .catch(this.handleError);
+  }
+
   private handleError(error: any): Promise<any> {
     console.error('error',error);
     return Promise.reject(error.message || error);
-  }
-
-  getHero(id: number): Promise<Hero> {
-    return this.getHeroes()
-      .then(heroes => heroes.find(hero => hero.id === id));
   }
 }
