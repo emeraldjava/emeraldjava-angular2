@@ -5,7 +5,7 @@ import { Hero } from './hero';
 import { HeroService } from './hero.service';
 
 @Component({
-  selector: 'my-heroes',
+  selector: 'app-heroes',
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.css']
 })
@@ -28,7 +28,7 @@ export class HeroesComponent implements OnInit {
 
   add(name: string): void {
     name = name.trim();
-    if(!name) { return; }
+    if (!name) { return; }
     this.heroService.create(name)
       .then(hero => {
         this.heroes.push(hero);
@@ -40,7 +40,7 @@ export class HeroesComponent implements OnInit {
     this.heroService.delete(hero.id)
       .then(() => {
         this.heroes = this.heroes.filter(h => h !== hero);
-        if(this.selectedHero === hero) {
+        if (this.selectedHero === hero) {
           this.selectedHero = null;
         }
       });
