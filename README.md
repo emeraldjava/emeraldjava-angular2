@@ -1,6 +1,14 @@
 # emeraldjava-angular2
 
 https://scotch.io/tutorials/creating-your-first-angular-2-components
+
+https://scotch.io/tutorials/angularjs-form-validation
+
+https://github.com/johnpapa/lite-server
+
+https://angular.io/docs/ts/latest/guide/learning-angular.html
+
+https://scotch.io/tutorials/creating-your-first-angular-2-components
 https://www.infoq.com/articles/Angular2-TypeScript-High-Level-Overview
 
 http://www.primefaces.org/primeng/#/
